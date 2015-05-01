@@ -16,7 +16,7 @@
 Enable notifications for all builds with `-n` or `--alwaysnotify`.
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
 
-`refreshify-plus -v -n -m 'AWW YEAH!'`
+`refreshify-plus -o -v -n -m 'AWW YEAH!'`
 
 ![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
 

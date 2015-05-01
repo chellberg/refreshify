@@ -16,5 +16,20 @@
     "node-notifier": "^4.1.2",
     "watchify": "^3.1.0"
   },
-  "bin": "bin/cmd.js"
+  "bin": {
+    "refreshify-plus": "bin/cmd.js"
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chellberg/refreshify-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chellberg/refreshify-plus/issues"
+  },
+  "homepage": "https://github.com/chellberg/refreshify-plus"
 }
