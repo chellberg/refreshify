@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/*eslint-disable */
 
 var fromArgs      = require('watchify/bin/args.js');
 var fs            = require('fs');
@@ -23,6 +24,8 @@ w.setMaxListeners(Infinity);
 
 var outfile = w.argv.o || w.argv.outfile;
 var verbose = w.argv.v || w.argv.verbose;
+var alwaysNotify = w.argv.n || w.argv.notifyall;
+var customTitle = w.argv.m || w.argv.message;
 
 if (!outfile) {
     console.error('You MUST specify an outfile with -o.');
@@ -39,6 +42,15 @@ function notifyError(errorMessage) {
     notifier.notify({
         'title': 'ERROR!',
         'message': errorMessage
+    });
+}
+
+function notify(message) {
+    console.error(message);
+    title = customTitle || 'Success!'
+    notifier.notify({
+        'title': title,
+        'message': message
     });
 }
 
@@ -65,8 +77,13 @@ function bundle () {
     wb.on('end', function () {
         fs.rename(dotfile, outfile, function (err) {
             if (err) return notifyError(err);
+
+            var message = bytes + ' bytes written to ' + outfile + ' (' + (time / 1000).toFixed(2) + ' seconds)'
             if (verbose) {
-                console.error(bytes + ' bytes written to ' + outfile + ' (' + (time / 1000).toFixed(2) + ' seconds)');
+                console.error(message);
+            }
+            if (alwaysNotify) {
+              notify(message);
             }
             refreshServer.refresh();
         });

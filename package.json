@@ -1,12 +1,12 @@
 {
-  "name": "refreshify",
+  "name": "refreshify-plus",
   "version": "0.0.2",
-  "description": "",
+  "description": "alexandergugel's refreshify + option to enable notifications for nonerroring builds + customizable notification title",
   "scripts": {
     "test": "tape test/**/*.js",
     "example": "node bin/cmd.js ./example/index.js -d -o example/index.bundle.js -v"
   },
-  "author": "Alexander Gugel <alexander.gugel@gmail.com>",
+  "author": "Corin Chellberg (corinchellberg@gmail.com)",
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.0.0"
