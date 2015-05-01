@@ -37,8 +37,8 @@ $ refreshify-plus main.js -o static/bundle.js
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
 the fly.
-
-
+ 
+ 
 Enable notifications for all builds with `-n` or `--alwaysnotify`.  
 
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
