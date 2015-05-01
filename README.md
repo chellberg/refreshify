@@ -32,17 +32,21 @@ Use `refreshify-plus` with all the same arguments as `browserify` except that
 `-o` is mandatory:
 
 ```
-$ refreshify main.js -o static/bundle.js
+$ refreshify-plus main.js -o static/bundle.js
 ```
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
 the fly.
 
-Enable notifications for all builds with `-n` or `--alwaysnotify`.
+
+Enable notifications for all builds with `-n` or `--alwaysnotify`.  
+
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
 
 `refreshify-plus -v -n -m 'AWW YEAH!'`
+
 ![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
+
 
 You can use `-v` to get more verbose output to show when a file was written and how long the bundling took (in seconds):
 
