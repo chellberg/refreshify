@@ -1,21 +1,27 @@
 # refreshify-plus
 
-**refreshify:** watch mode on steroids for browserify builds  
-
-**refreshify-plus:** refreshify + notifications for nonerroring builds + customizable notification title
+> [refreshify](https://github.com/alexanderGugel/refreshify): watch mode on steroids for browserify builds
+> refreshify-plus: refreshify + notifications for nonerroring builds + customizable notification title
 
 ## Features
-
-Update any source file and your browserify bundle will be recompiled on the
-spot.
 
 ### [refreshify](https://github.com/alexanderGugel/refreshify)
 * recompiles your browserify bundle as soon as a source file changes
 * notifies you via native desktop notification if your build fails
 
 ### refreshify-plus
-* notifies you via native desktop notification every time your build completes (-n --alwaysnotify)
-* allows you to customize the (nonerroring) build complete notification's title (-m 'AWWW YEAH!' or --message 'Built!')
+* notifies you via native desktop notification every time your build completes (`-n` `--alwaysnotify`)
+* allows you to customize the (nonerroring) build complete notification's title `-m 'AWWW YEAH!'` or `--message 'Built!'`  
+
+Enable notifications for all builds with `-n` or `--alwaysnotify`.
+Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
+
+`refreshify-plus -v -n -m 'AWW YEAH!'`
+![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
+
+---
+
+### remainder of refreshify documentation
 
 ![notification](https://raw.github.com/chellberg/refreshify/master/example/notification.gif)
 
@@ -33,21 +39,11 @@ Use `refreshify-plus` with all the same arguments as `browserify` except that
 `-o` is mandatory:
 
 ```
-$ refreshify-plus main.js -o static/bundle.js
+$ refreshify main.js -o static/bundle.js
 ```
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
 the fly.
-
-
-Enable notifications for all builds with `-n` or `--alwaysnotify`.  
-
-Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
-
-`refreshify-plus -v -n -m 'AWW YEAH!'`
-
-![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
-
 
 You can use `-v` to get more verbose output to show when a file was written and how long the bundling took (in seconds):
 
