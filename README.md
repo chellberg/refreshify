@@ -1,7 +1,7 @@
 # refreshify-plus
 
 > [refreshify](https://github.com/alexanderGugel/refreshify): watch mode on steroids for browserify builds   
-> refreshify-plus: refreshify + notifications for nonerroring builds + customizable notification title
+> **refreshify-plus**: refreshify + notifications for nonerroring builds + customizable notification title
 
 ## Features
 
