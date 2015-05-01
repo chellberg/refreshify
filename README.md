@@ -1,14 +1,15 @@
 # refreshify-plus
 
-> refreshify: watch mode on steroids for browserify builds
-> refreshify-plus: refreshify + notifications for nonerroring builds + customizable notification title
+**refreshify:** watch mode on steroids for browserify builds  
+
+**refreshify-plus:** refreshify + notifications for nonerroring builds + customizable notification title
 
 ## Features
 
 Update any source file and your browserify bundle will be recompiled on the
 spot.
 
-### refreshify
+### [refreshify](https://github.com/alexanderGugel/refreshify)
 * recompiles your browserify bundle as soon as a source file changes
 * notifies you via native desktop notification if your build fails
 
@@ -37,8 +38,8 @@ $ refreshify-plus main.js -o static/bundle.js
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
 the fly.
- 
- 
+
+
 Enable notifications for all builds with `-n` or `--alwaysnotify`.  
 
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
