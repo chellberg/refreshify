@@ -1,6 +1,6 @@
 # refreshify-plus
 
-> [refreshify](https://github.com/alexanderGugel/refreshify): watch mode on steroids for browserify builds
+> [refreshify](https://github.com/alexanderGugel/refreshify): watch mode on steroids for browserify builds   
 > refreshify-plus: refreshify + notifications for nonerroring builds + customizable notification title
 
 ## Features
@@ -17,6 +17,7 @@ Enable notifications for all builds with `-n` or `--alwaysnotify`.
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
 
 `refreshify-plus -v -n -m 'AWW YEAH!'`
+
 ![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
 
 ---
@@ -39,7 +40,7 @@ Use `refreshify-plus` with all the same arguments as `browserify` except that
 `-o` is mandatory:
 
 ```
-$ refreshify main.js -o static/bundle.js
+$ refreshify-plus main.js -o static/bundle.js
 ```
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
