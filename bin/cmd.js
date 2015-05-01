@@ -46,7 +46,6 @@ function notifyError(errorMessage) {
 }
 
 function notify(message) {
-    console.error(message);
     title = customTitle || 'Success!'
     notifier.notify({
         'title': title,
