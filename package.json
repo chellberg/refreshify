@@ -1,6 +1,6 @@
 {
-  "name": "refreshify-plus",
-  "version": "0.0.2",
+  "name": "refreshify-allnotifications",
+  "version": "0.0.3",
   "description": "alexandergugel's refreshify + option to enable notifications for nonerroring builds + customizable notification title",
   "scripts": {
     "test": "tape test/**/*.js",
@@ -17,7 +17,7 @@
     "watchify": "^3.1.0"
   },
   "bin": {
-    "refreshify-plus": "bin/cmd.js"
+    "refreshify-allnotifications": "bin/cmd.js"
   },
   "main": "index.js",
   "directories": {
@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chellberg/refreshify-plus.git"
+    "url": "https://github.com/chellberg/refreshify-allnotifications.git"
   },
   "bugs": {
-    "url": "https://github.com/chellberg/refreshify-plus/issues"
+    "url": "https://github.com/chellberg/refreshify-allnotifications/issues"
   },
-  "homepage": "https://github.com/chellberg/refreshify-plus"
+  "homepage": "https://github.com/chellberg/refreshify-allnotifications"
 }

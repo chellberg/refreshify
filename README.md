@@ -1,7 +1,7 @@
-# refreshify-plus
+# refreshify-allnotifications
 
 > [refreshify](https://github.com/alexanderGugel/refreshify): watch mode on steroids for browserify builds   
-> **refreshify-plus**: refreshify + notifications for nonerroring builds + customizable notification title
+> **refreshify-allnotifications**: refreshify + notifications for nonerroring builds + customizable notification title
 
 ## Features
 
@@ -9,16 +9,16 @@
 * recompiles your browserify bundle as soon as a source file changes
 * notifies you via native desktop notification if your build fails
 
-### refreshify-plus
+### refreshify-allnotifications
 * notifies you via native desktop notification every time your build completes (`-n` `--alwaysnotify`)
 * allows you to customize the (nonerroring) build complete notification's title `-m 'AWWW YEAH!'` or `--message 'Built!'`  
 
 Enable notifications for all builds with `-n` or `--alwaysnotify`.
 Customize the notification title with `-m 'custom title here'` or `--message 'YES!'`.
 
-`refreshify-plus -o -v -n -m 'AWW YEAH!'`
+`refreshify-allnotifications -o -v -n -m 'AWW YEAH!'`
 
-![custom](https://raw.github.com/chellberg/refreshify-plus/master/example/custom.png)
+![custom](https://raw.github.com/chellberg/refreshify-allnotifications/master/example/custom.png)
 
 ---
 
@@ -28,19 +28,19 @@ Customize the notification title with `-m 'custom title here'` or `--message 'YE
 
 * live-reload built in
 
-![live-reload](https://raw.github.com/chellberg/refreshify-plus/master/example/live-reload.gif)
+![live-reload](https://raw.github.com/chellberg/refreshify-allnotifications/master/example/live-reload.gif)
 
 * server/protocol agnostic: No need to have a local dev server, even works when files are beign served from the local file system
 
-![protocol](https://raw.github.com/chellberg/refreshify-plus/master/example/protocol.gif)
+![protocol](https://raw.github.com/chellberg/refreshify-allnotifications/master/example/protocol.gif)
 
 ## Example
 
-Use `refreshify-plus` with all the same arguments as `browserify` except that
+Use `refreshify-allnotifications` with all the same arguments as `browserify` except that
 `-o` is mandatory:
 
 ```
-$ refreshify-plus main.js -o static/bundle.js
+$ refreshify-allnotifications main.js -o static/bundle.js
 ```
 
 Now as you update files, `static/bundle.js` will be automatically incrementally rebuilt on
@@ -65,10 +65,10 @@ To run the example included in this repo, run `npm run example`.
 With [npm](https://npmjs.org) do:
 
 ```
-$ npm install -g refreshify-plus
+$ npm install -g refreshify-allnotifications
 ```
 
-to get the global `refreshify-plus` command.
+to get the global `refreshify-allnotifications` command.
 
 
 ## License
